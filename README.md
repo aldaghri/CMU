@@ -1,2 +1,1 @@
-# CMU
-Coded Machine Unlearning
+# Coded Machine Unlearning
