@@ -13,14 +13,19 @@ This repository contains the python code that varies the size of shards and plot
 
 # General Guidelines
 
-The code runs the experiment on a synthetic dataset with features drawn from lognormal distribution with parameters mu=1, sigma^2=0.7. The response variable is generated as a polynomial of degree 3 with additive noise.
+The code runs the experiment on a either a synthetic dataset or a user-provided dataset. The synthetic data has features drawn from lognormal distribution with parameters mu=1, sigma^2=0.7. The response variable is generated as a polynomial of degree 3 with additive noise.
+
+If user-provided dataset is to be used, it needs to be a numerical matrix without any missing values with rows representing samples and columns representing features and the response variable is the last column in such matrix. The dataset should be named `my_dataset.csv` and located in the same directory as the code.
 
 The goal in this simulation is to observe the behavior of the tradeoff. Using randomly generated synthetic datasets with normalization might change the attainable MSE, but is irrelevent to the our goal which is to observe the behavior of the tradeoff.
+
+The code will output two figures: (1) Performance of the testing data vs unlearning cost tradeoff figure named `Test_tradeoff.png`. (2) Performance of training data vs average learning cost figure named `Train_tradeoff.png`.
 
 
 # Run The Code on A Synthetic Dataset
 
+First, load dependencies
 ```
 pip3 install -r reqs.txt
 ```
-
+If synthetic datasets
