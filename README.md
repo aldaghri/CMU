@@ -3,7 +3,7 @@ This repository contains the code used for experiments presented in the paper:
 
 > [**Coded Machine Unlearning**](https://arxiv.org/abs/2012.15721)
 > 
-> Nasser Aldaghri, Hessam Mahdavifar, Ahmad Beirami
+> Nasser Aldaghri, Hessam Mahdavifar, and Ahmad Beirami
 
 Machine learning models may store information about individual samples used during the training phase. Some sample may need to be removed from the model for various reasons. Retraining the model after removing such samples from the training dataset ensures complete removal. As more data becomes available, cost of retraining becomes increasingly expensive. Training ensemble models on disjoint shards of the training dataset reduces the cost of unlearning, possibly at the expense of degraded performance ([Bourtoule et al. 2020](https://arxiv.org/abs/1912.03817)).
 
