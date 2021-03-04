@@ -106,3 +106,5 @@ The results of these simulations are as follows
 <img src="https://user-images.githubusercontent.com/79866053/109910168-80de4400-7c75-11eb-8d03-925d795f0725.png">
 
 </td></tr> </table>
+
+**For additional discussion and experiments, please refer to the [paper](https://arxiv.org/abs/2012.15721).**
