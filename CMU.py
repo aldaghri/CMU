@@ -219,8 +219,8 @@ if Synthetic == 1:
     X_original2 = np.power(X_original, 2)
     X_original3 = np.power(X_original, 3)
     X = np.concatenate((X_original, X_original2, X_original3), axis=1)
-    Beta = np.random.standard_normal(size=(X.shape[1], 1))
-    y = np.matmul(X, Beta) + np.random.standard_normal(size=(X.shape[0], 1))
+    beta = np.random.standard_normal(size=(X.shape[1], 1))
+    y = np.matmul(X, beta) + np.random.standard_normal(size=(X.shape[0], 1))
 
 if Synthetic != 1:
     Data = genfromtxt('my_dataset.csv', delimiter=',')
