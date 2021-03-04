@@ -19,13 +19,36 @@ If user-provided dataset is to be used, it needs to be a numerical matrix withou
 
 The goal in this simulation is to observe the behavior of the tradeoff. Using randomly generated synthetic datasets with normalization might change the attainable MSE, but is irrelevent to the our goal which is to observe the behavior of the tradeoff.
 
-The code will output two figures: (1) Performance of the testing data vs unlearning cost tradeoff figure named `Test_tradeoff.png`. (2) Performance of training data vs average learning cost figure named `Train_tradeoff.png`.
+The code will output a file named `Output.csv` containing the results of the simulations and two figures: (1) Performance of the testing data vs unlearning cost tradeoff figure named `Test_tradeoff.png`. (2) Performance of training data vs average learning cost figure named `Train_tradeoff.png`.
 
 
-# Run The Code on A Synthetic Dataset
+# Run simulations
 
-First, load dependencies
+To start the simulations, first load dependencies by downloading the file `reqs.txt` and running the following command:
 ```
 pip3 install -r reqs.txt
 ```
-If synthetic datasets
+Now, depending on the dataset to be used, either run `synthetic.sh` or `realistic.sh`. The latter requires the desired dataset to be in the same directory and named `my_dataset.csv` and follows the aforementioned guidelines.
+
+**Note:** The code normalizes all features along with the response variable such that each has the range [0,1].
+
+In the shell file you can set the following parameters:
+| Parameter  | Description |
+| ---------- | ----------- |
+| `Alpha`  | Regularization parameter for ridge regression |
+| `Code_rate`  | The rate of the encoder; should be greater than 1 |
+| `Num_trials`  | Number of simulation runs to generate the curves |
+| `Synthetic`  | Set to 1 for lognormal synthetic dataset, 0 for user-provided dataset |
+| `Sigma`  | Sigma parameter for lognormal features |
+| `Num_features`  | Number of original lognormal features |
+| `Num_samples`  | Total number of samples for synthetic dataset |
+| `Num_test`  | Number of samples used for testing for any dataset |
+| `Random_proj`  | Set to 1 to use random projections corresponding to the Gaussian kernel, 0 to use original features |
+| `Show_progress`  | Set to 1 to view the progress and intermediate results while executing the code |
+
+Once the parameters are set, run the code using the following command:
+```
+bash filename.sh
+```
+
+# Sample simulation results:
