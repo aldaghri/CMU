@@ -54,9 +54,9 @@ bash filename.sh
 # Sample simulation results:
 Running the shell files `synthetic.sh` and `realistic.sh` will use the following parameters, respectively.
 <table>
-<tr><th>synthetic.sh </th><th>realistic.sh</th></tr>
+<tr><th>synthetic.sh</th><th>realistic.sh</th></tr>
 <tr><td>
-
+  
 | Parameter  | Value |
 | ---------- | ----------- |
 | `Alpha`  | 0 |
@@ -84,5 +84,25 @@ Running the shell files `synthetic.sh` and `realistic.sh` will use the following
 | `Num_test`  | 692 |
 | `Random_proj`  | 0 |
 | `Show_progress`  | 0 |
+
+</td></tr> </table>
+
+**Note:** Running realistic.sh requires downloading `/Datasets/compacts_projected.csv` then renaming it to `my_dataset.csv`, and commenting lines 231-232 in `CMU.py`.
+
+The results of these simulations are as follows
+
+<table>
+<tr><th>Synthetic</th><th>CompAct</th></tr>
+<tr><td>
+
+<img src="https://user-images.githubusercontent.com/79866053/109908552-7ec6b600-7c72-11eb-996d-4ce2ad9c1b89.png">
+
+<img src="https://user-images.githubusercontent.com/79866053/109908579-89814b00-7c72-11eb-869c-dbb6c6f6b2e9.png">
+
+</td><td>
+  
+<img src="https://user-images.githubusercontent.com/79866053/109910167-8045ad80-7c75-11eb-87e1-4add450cea1f.png">
+
+<img src="https://user-images.githubusercontent.com/79866053/109910168-80de4400-7c75-11eb-8d03-925d795f0725.png">
 
 </td></tr> </table>
