@@ -9,7 +9,7 @@ Machine learning models may store information about individual samples used duri
 
 We propose utilizing a linear encoder to compress the training dataset into a fewer number of shards used to train the ensemble model for linear and ridge regression. For non-linear regression, random feature projections ([Rahimi and Recht 2008](https://ieeexplore.ieee.org/abstract/document/4797607)) along with ridge regression are utilized.
 
-This repository contains the python code that varies the size of shards and plots the performance vs. unlearning cost tradeoff for uncoded machine unlearning ([Bourtoule et al. 2020](https://arxiv.org/abs/1912.03817)) and the proposed coded machine unlearning. As can be seen from experiments, coded unlearning can provide a significant gain in terms of performance vs unlearning cost tradeoff, depending on some properties of the features.
+This repository contains the python code that sweeps the size of shards and plots the performance vs. unlearning cost tradeoff for uncoded machine unlearning ([Bourtoule et al. 2020](https://arxiv.org/abs/1912.03817)) and the proposed coded machine unlearning. As can be seen from experiments, coded unlearning can provide a significant gain in terms of performance vs unlearning cost tradeoff, depending on some properties of the features.
 
 # General Guidelines
 
