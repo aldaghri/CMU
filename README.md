@@ -32,7 +32,7 @@ Now, depending on the dataset to be used, either run `synthetic.sh` or `realisti
 
 **Note:** The code normalizes all features along with the response variable such that each has the range [0,1].
 
-In the shell file you can set the following parameters:
+In the shell files you can set the following parameters:
 | Parameter  | Description |
 | ---------- | ----------- |
 | `Alpha`  | Regularization parameter for ridge regression |
@@ -52,3 +52,37 @@ bash filename.sh
 ```
 
 # Sample simulation results:
+Running the shell files `synthetic.sh` and `realistic.sh` will use the following parameters, respectively.
+<table>
+<tr><th>synthetic.sh </th><th>realistic.sh</th></tr>
+<tr><td>
+
+| Parameter  | Value |
+| ---------- | ----------- |
+| `Alpha`  | 0 |
+| `Code_rate`  | 5 |
+| `Num_trials`  | 2000 |
+| `Synthetic`  | 1 |
+| `Sigma`  | 0.5 |
+| `Num_features`  | 50 |
+| `Num_samples`  | 15000 |
+| `Num_test`  | 2000 |
+| `Random_proj`  | 0 |
+| `Show_progress`  | 0 |
+
+</td><td>
+
+| Parameter  | Value |
+| ---------- | ----------- |
+| `Alpha`  | 0.001 |
+| `Code_rate`  | 5 |
+| `Num_trials`  | 5000 |
+| `Synthetic`  | 0 |
+| `Sigma`  | -- |
+| `Num_features`  | -- |
+| `Num_samples`  | -- |
+| `Num_test`  | 692 |
+| `Random_proj`  | 0 |
+| `Show_progress`  | 0 |
+
+</td></tr> </table>
