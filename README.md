@@ -13,7 +13,7 @@ This repository contains the python code that sweeps the size of shards and plot
 
 # General Guidelines
 
-The code runs the experiment on either a synthetic dataset or a user-provided dataset. The synthetic data has features drawn from lognormal distribution with parameters mu=1, sigma^2=0.7. The response variable is generated as a polynomial of degree 3 whose coefficients are generated from a normal distribution along with additive noise.
+The code runs the experiment on either a synthetic dataset or a user-provided dataset. The synthetic data has features drawn from lognormal distribution with parameters mu=1, sigma=0.5. The response variable is generated as a polynomial of degree 3 whose coefficients are generated from a normal distribution along with additive noise.
 
 If a user-provided dataset is to be used, it needs to be a numerical matrix without any missing values with rows representing samples and columns representing features and the response variable is the last column in such matrix. The dataset should be named `my_dataset.csv` and located in the same directory as the code.
 
